@@ -2,7 +2,7 @@
 lock '3.2.1'
 
 set :application, 'cappy4'
-set :repo_url, 'git@github.com:lawrrn/cappy4.git'
+set :repo_url, 'ssh://git@bitbucket.org/lawrrn/cappy.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
