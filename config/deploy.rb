@@ -10,7 +10,7 @@ set :repo_url, 'ssh://git@github.com:lawrrn/cappy4.git'
 # Default deploy_to directory is /var/www/my_app
 # set :deploy_to, '/var/www/my_app'
 
-set :deploy_to, "/home/asyn/apps/#{application}"
+set :deploy_to, "/home/asyn/apps/cappy4"
 
 # Default value for :scm is :git
 set :scm, :git
