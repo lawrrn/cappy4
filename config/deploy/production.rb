@@ -27,7 +27,8 @@ server '162.243.154.183', user: 'asyn', roles: %w{web app}
 # --------------
  set :ssh_options, {
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
-   forward_agent: true
+   forward_agent: true,
+   port: 222
 #    auth_methods: %w(password)
  }
 #
