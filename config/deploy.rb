@@ -2,15 +2,18 @@
 lock '3.2.1'
 
 set :application, 'cappy4'
-set :repo_url, 'ssh://git@github.com:lawrrn/cappy4.git'
+set :repo_url, 'ssh://git@github.com/lawrrn/cappy4.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
+set :branch, 'master'
+set :user, 'asyn'
+
 # Default deploy_to directory is /var/www/my_app
 # set :deploy_to, '/var/www/my_app'
 
-set :deploy_to, "/home/asyn/apps/cappy4"
+set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
 # Default value for :scm is :git
 set :scm, :git
